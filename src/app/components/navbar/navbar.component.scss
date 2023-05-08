@@ -1,11 +1,246 @@
-.collapse ul{
-    margin-left: 100px;
+/*****Ection information******/
+
+a{
+    text-decoration: none  !important;
+  }
+  
+  .header-top {
+    background: #424242 none repeat scroll 0 0;
+    height: 35px;
+    line-height: 35px;
+  }
+  .header-top ul li {
+    display: inline;
+  }
+  .header-top ul li a {
+    padding-right: 20px;
+    font-size: 14px;
+    font-weight: 400;
+      color: #fff;
+      text-decoration: none;
+      font-family: 'Roboto', sans-serif;
+  }
+  .header-top i {
+    color: #fff;
+    font-size: 15px;
+    padding-left: 24px;
+  }
+  .header-top p i {
+    padding-left: 24px;
+  }
+  .header-top p {
+    display: inline;
+    width: 50%;
+      font-size: 14px;
+      font-weight: 400;
+      color: #fff;
+      font-family: 'Roboto', sans-serif;
+  }
+  .header-top p a {
+      font-size: 14px;
+      font-weight: 400;
+      color: #fff;
+  }
+  .header-top span {
+    padding-right: 10px;
+  }
+  .header-top .a-right {
+    text-align: right;
+  }
+  .header-top .icon {
+    text-align: center;
+  }
+
+
+  //****Section search***/
+  
+.category{
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.category span {
+color: #6a6666;
+font-family: "Roboto",sans-serif;
+font-size: 14px;
+font-weight: 400;
+margin: 0 20px 0 10px;
+}
+.category i {
+font-size: 22px;
+  color: #7e7e7e
 }
 
-@media (max-width:995px){
- nav{
-    display: none;
- }
+
+
+
+form{
+  display: flex;
 }
 
 
+
+.form-container{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-catagory button {
+background:  #6a6666 none repeat scroll 0 0;
+border: medium none;
+color: #fff;
+font-size: 24px;
+height: 60px;
+margin-left: 0px;
+padding-bottom: 10px;
+width: 55px;
+}
+
+
+
+.header-catagory input[type="text"] {
+background: #fff none repeat scroll 0 0;
+  border-top: 2px solid #d5d5d5;
+  border-bottom: 2px solid #d5d5d5;
+  border-left: 2px solid #d5d5d5;
+  border-right: 1px solid #d5d5d5;
+margin: 0;
+width: 328px;
+padding: 20px 0;
+  height: 60px;
+}
+.header-catagory input[placeholder] {
+font-size: 14px;
+padding: 0 44px;
+width: 295px;
+}
+.header-catagory select {
+background: #fff none repeat scroll 0 0;
+  border-top: 2px solid #d5d5d5;
+  border-bottom: 2px solid #d5d5d5;
+  border-left: 1px solid #d5d5d5;
+  border-right: 1px solid #d5d5d5;
+font-size: 14px;
+height: 60px;
+margin: 0 0 0 -5px;
+padding: 0 30px;
+width: 173px;
+border-right: none;
+}
+
+@media (max-width:600px){
+
+  .category span {
+      color: #6a6666;
+      font-family: "Roboto",sans-serif;
+      font-size: 10px;
+      font-weight: 400;
+      gap: 2px;
+      margin: 10 0px 0 10px;
+    }
+    .category i {
+      font-size: 15px;
+        color: #7e7e7e
+    }
+    form{
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .shared-container{
+      margin-top: 10px;
+    }
+}
+
+
+
+
+
+
+/***Styles navbar**/
+nav{
+  margin: 40px;
+}
+.nav-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.menu-container ul{
+  display: flex;
+  gap: 10px;
+  list-style: none;
+}
+
+.menu-container li a{
+  text-decoration: none;
+  color: #817e7e;
+}
+
+.logo h2 {
+color: #4f4f4f;
+font-family: "Roboto",sans-serif;
+font-size: 61px;
+font-weight: bold;
+}
+.logo > a {
+text-decoration: none;
+}
+.nav.navbar-nav {
+margin-top: 28px;
+}
+.navbar-nav > li > a {
+color: #665f5f;
+font-size: 21px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.cart {
+text-align: right;
+}
+.cart > p {
+font-size: 23px;
+margin-top: 36px;
+}
+.cart i {
+color: #2fabaf;
+font-size: 30px;
+}
+.cart sup {
+background: #c3bdbd;
+margin-left: -4px;
+padding: 0 5px;
+border-radius: 20px;
+}
+
+@media (max-width:870px){
+  *{
+      margin: 0;
+      padding: 0;
+  }
+  .nav-container{
+      display: flex;
+      flex-direction: column;
+  }
+}
+@media (max-width:600px){
+  .logo a h2{
+      font-size: 40px;
+  }
+  .menu-container ul li a{
+      font-size: 12px;
+  }
+  .cart p{
+      font-size: 15px;
+  }
+  .cart p i{
+      font-size: 15px;
+  }
+  .cart-container{
+      margin-top: -20px;
+  }
+}

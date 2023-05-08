@@ -5,4 +5,4 @@ export interface Data{
     description:string,
     category:string,
     image:string
-    }
+    } 

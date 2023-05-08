@@ -9,20 +9,22 @@ import { ApiService } from 'src/app/services/api.service';
 })
 export class MainComponent implements OnInit {
 
-    data:Data[ ]|undefined;
+  data: Data[] | undefined;
 
-  constructor(private apiServises:ApiService) { }
+  constructor(
+    private apiServices: ApiService
+  ) { }
 
   ngOnInit(): void {
     this.llenar_data();
   }
 
-  llenar_data(){
-    this.apiServises.getData().subscribe(data=> {
+  llenar_data() {
+    this.apiServices.getData().subscribe(data => {
       this.data = data;
-      console.table(this.data)
-    })
+      // Configura la cookie SameSite=None y Secure
+      document.cookie = 'cookie_name=cookie_value;expires=Fri, 31 Dec 9999 23:59:59 GMT;path=/;domain=example.com;secure;samesite=none';
+    });
   }
 
-  
 }

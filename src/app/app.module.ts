@@ -8,7 +8,6 @@ import { CardsComponent } from './components/cards/cards.component';
 import {HttpClientModule} from '@angular/common/http';
 import { PrincipalComponent } from './components/principal/principal.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { NavbarMovileComponent } from './components/navbar-movile/navbar-movile.component';
 import { FooterComponent } from './components/footer/footer.component'
 
 @NgModule({
@@ -18,7 +17,6 @@ import { FooterComponent } from './components/footer/footer.component'
     CardsComponent,
     PrincipalComponent,
     NavbarComponent,
-    NavbarMovileComponent,
     FooterComponent
   ],
   imports: [
