@@ -2,7 +2,6 @@
     <h1>Productos</h1>
     <hr/>
     
-    <input type="text" class="form-control my-3" placeholder="Buscar..." >
     <div class="row">
         <div *ngFor="let producto of data " class="col-xl-3 col-sm-6 col-xs-15">
             <app-cards [producto]="producto"></app-cards>

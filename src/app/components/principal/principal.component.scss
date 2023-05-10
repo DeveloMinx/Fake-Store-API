@@ -1,0 +1,12 @@
+.slider-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#carouselExampleCaptions{
+    width: 70%;
+}
+.carousel-inner img{
+    max-height: 500px;
+    object-fit: cover;
+}

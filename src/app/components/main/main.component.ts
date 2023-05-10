@@ -22,6 +22,7 @@ export class MainComponent implements OnInit {
   llenar_data() {
     this.apiServices.getData().subscribe(data => {
       this.data = data;
+      console.table(data) 
       // Configura la cookie SameSite=None y Secure
       document.cookie = 'cookie_name=cookie_value;expires=Fri, 31 Dec 9999 23:59:59 GMT;path=/;domain=example.com;secure;samesite=none';
     });
