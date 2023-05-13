@@ -10,3 +10,39 @@
     max-height: 500px;
     object-fit: cover;
 }
+@media (max-width:1300px){
+    #carouselExampleCaptions{
+        width: 80%;
+    }
+    .carousel-inner img{
+        max-height: 400px;
+        object-fit: cover;
+    }
+}
+@media (max-width:900px){
+    #carouselExampleCaptions{
+        width: 90%;
+    }
+    .carousel-inner img{
+        max-height: 300px;
+        object-fit: cover;
+    }
+}
+@media (max-width:650px){
+    #carouselExampleCaptions{
+        width: 100%;
+    }
+    .carousel-inner img{
+        max-height: 250px;
+        object-fit: cover;
+    }
+}
+@media (max-width:500px){
+    #carouselExampleCaptions{
+        width: 100%;
+    }
+    .carousel-inner img{
+        max-height: 200px;
+        object-fit: cover;
+    }
+}
